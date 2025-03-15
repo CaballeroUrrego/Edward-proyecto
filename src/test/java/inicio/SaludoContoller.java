@@ -18,10 +18,5 @@ public class SaludoContoller {
         return "Bienvenido al microservicios spring boot, señor@ " + nombre;
     }
 
-    /*
-    @GetMapping(value = "saludadatos", produces = MediaType.TEXT_PLAIN_VALUE)
-    public String saludo(@RequestParam("name") String nombre, @RequestParam("edad") int edad) {
-        return "hola " + nombre + " bienvenido a Spring Boot la edad es " + edad;
-    }
-    */
+   
 }
