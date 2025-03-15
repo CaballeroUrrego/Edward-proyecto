@@ -6,36 +6,22 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @RestController
-
 public class SaludoContoller {
 
     @GetMapping(value = "saludo", produces = MediaType.TEXT_PLAIN_VALUE)
-
     public String saludo() {
-
         return "Hola Mundo desde Spring Boot";
-
     }
 
     @GetMapping(value = "saludo/{name}", produces = MediaType.TEXT_PLAIN_VALUE)
-
-    public String saludo(@PathVariable("name") String nombre)
-
-    {
-
+    public String saludo(@PathVariable("name") String nombre) {
         return "Bienvenido al microservicios spring boot, señor@ " + nombre;
-
     }
 
-  
+    /*
     @GetMapping(value = "saludadatos", produces = MediaType.TEXT_PLAIN_VALUE)
-
-    public String saludo(@RequestParam("name") String nombre, @RequestParam("edad") int edad)
-
-    {
-
-     return "hola " + nombre + " bienvenido a Spring Boot la edad es " + edad;
-
+    public String saludo(@RequestParam("name") String nombre, @RequestParam("edad") int edad) {
+        return "hola " + nombre + " bienvenido a Spring Boot la edad es " + edad;
     }
-
+    */
 }
